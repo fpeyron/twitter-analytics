@@ -1,0 +1,13 @@
+#analytics:
+#  container_name: analytics
+#  image: florentpeyron/twitter-analytics:latest
+#  ports:
+#   - "8761:8761"
+graphdb:
+  container_name: graphdb
+  image: neo4j:latest
+  ports:
+   - "7474:7474"
+rabbit:
+  container_name: rabbit
+  image: rabbitmq:3
