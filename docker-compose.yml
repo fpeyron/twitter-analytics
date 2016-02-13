@@ -10,4 +10,6 @@ graphdb:
    - "7474:7474"
 rabbit:
   container_name: rabbit
-  image: rabbitmq:3
+  image: rabbitmq:3-management
+  ports:
+  - "15672:15672"
