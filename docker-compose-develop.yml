@@ -1,8 +1,3 @@
-#analytics:
-#  container_name: analytics
-#  image: florentpeyron/twitter-analytics:latest
-#  ports:
-#   - "8761:8761"
 graphdb:
   container_name: graphdb
   image: neo4j:latest
@@ -12,8 +7,9 @@ graphdb:
     - SYS_RESOURCE
   ports:
     - "7474:7474"
-rabbit:
-  container_name: rabbit
+
+rabbitmq:
+  container_name: rabbitmq
   image: rabbitmq:3-management
   ports:
     - "15672:15672"
