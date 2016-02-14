@@ -11,7 +11,7 @@ import java.util.Set;
 /**
  * Created by florent on 10/02/2016.
  */
-@RepositoryRestResource(collectionResourceRel = "follows", path = "follows")
+@RepositoryRestResource(collectionResourceRel = "follow", path = "follows")
 public interface FollowsRepository extends PagingAndSortingRepository<Follows, Long> {
 
 

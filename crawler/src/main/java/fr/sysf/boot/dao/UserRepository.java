@@ -11,7 +11,7 @@ import java.util.Set;
 /**
  * Created by florent on 10/02/2016.
  */
-@RepositoryRestResource(collectionResourceRel = "user", path = "user")
+@RepositoryRestResource(collectionResourceRel = "user", path = "users")
 public interface UserRepository extends PagingAndSortingRepository<User, Long> {
 
     User findUserByScreenName(String screenName);
